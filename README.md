@@ -21,7 +21,22 @@ It mainly focuses on:
         ├── bird
         └── ...
 ```
-2) Creating custom Pytorch dataset using those saved images, rather than using pre-defined Pytorch CIFAR10 class.
+2) Creating custom Pytorch dataset using those saved images, rather than using pre-defined Pytorch CIFAR10 class:
+
+```python
+class CIFAR10(Dataset):
+    def __init__(self, dataset_path):
+        ...
+
+    def __getitem__(self, index):
+        ...
+        return (image, label)
+
+
+    def __len__(self):
+        ...
+        return data_length
+```
 
 If there is any error, please let us know. 
 

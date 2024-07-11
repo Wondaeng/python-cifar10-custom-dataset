@@ -1,8 +1,12 @@
 # Python Custom CIFAR10 Dataset
 
-This repo contains python scripts for creating custom Pytorch dataset from scratch (without using torchvision.datasets.CIFAR10 class).
+## What is this repository about?
+This repo contains python scripts for creating custom Pytorch dataset from scratch (without using torchvision.datasets.CIFAR10 class) for AI summer school 2024.
+Students can learn how to preprocess raw dataset from the public online source and how to organize them nicely.
 
-1) Convert CIFAR10 archive to images into below structure:
+It mainly focuses on:
+
+1) Converting CIFAR10 archive to images into below structure:
 ```
 .
 └── cifar-10/
@@ -17,4 +21,7 @@ This repo contains python scripts for creating custom Pytorch dataset from scrat
         ├── bird
         └── ...
 ```
-2) Create custom Pytorch dataset using CIFAR10 images.
+2) Creating custom Pytorch dataset using those saved images, rather than using pre-defined Pytorch CIFAR10 class.
+
+If there is any error, please let us know. 
+
